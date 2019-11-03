@@ -6,6 +6,28 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-item-divider>
+  <ion-label>Long Term Goals </ion-label>
+</ion-item-divider>
 
+<ion-content>
+  <!-- Searchbar with cancel button always shown -->
+  <ion-searchbar showCancelButton="always"></ion-searchbar>
 </ion-content>
+
+<ion-item-divider></ion-item-divider>
+<ion-item-divider>
+  <ion-label>Short term Goals</ion-label>
+</ion-item-divider>
+
+<ion-content>
+  <!-- Searchbar with cancel button always shown -->
+  <ion-searchbar showCancelButton="always"></ion-searchbar>
+</ion-content>
+
+<ion-content>
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+  </ion-content>
+  

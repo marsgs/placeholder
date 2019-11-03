@@ -1,5 +1,7 @@
 {
   "name": "workout",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
