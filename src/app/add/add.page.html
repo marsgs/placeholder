@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item-divider></ion-item-divider>
+  
+  <ion-item>
+    <!-- Input with clear button when there is a value -->
+    <ion-label position="stacked">Title <ion-text color="danger">*</ion-text>
+    </ion-label>
+    <ion-input clearInput value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <!-- Input with clear button when there is a value -->
+    <ion-label position="stacked">Notes <ion-text color="danger">*</ion-text>
+    </ion-label>
+    <ion-input clearInput value=""></ion-input>
+  </ion-item>
+  
+  <ion-item-divider></ion-item-divider>
+  
+  <ion-item>
+    <ion-label>Start Date</ion-label>
+    <ion-datetime displayFormat="D MMM YYYY" min="1997" max="2010" value="November 19, 2019"></ion-datetime>
+  </ion-item>
+  
+  <ion-item>
+      <ion-label>Repeats</ion-label>
+      <ion-select value="notifications" interface="action-sheet">
+        <ion-select-option value="daily">Daily</ion-select-option>
+        <ion-select-option value="weekly">Weekly</ion-select-option>
+        <ion-select-option value="monthly">Monthly</ion-select-option>
+        <ion-select-option value="yearly">Yearly</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item-divider></ion-item-divider>
+
+    <ion-item>
+        <ion-label>Remind Me</ion-label>
+        <ion-datetime displayFormat="HH:mm"></ion-datetime>
+      </ion-item>
+
+      <ion-item-divider></ion-item-divider>
+      <ion-button color= "primary" expand="block">Create</ion-button>
+
+</ion-content>
