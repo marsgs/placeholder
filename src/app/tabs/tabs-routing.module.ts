@@ -28,6 +28,11 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'add',
+        loadChildren: () => 
+          import('../add/add.module').then(m => m.AddPageModule)
+      },
+      {
         path: 'tab3',
         children: [
           {
@@ -36,6 +41,11 @@ const routes: Routes = [
               import('../tab3/tab3.module').then(m => m.Tab3PageModule)
           }
         ]
+      },
+      {
+        path: 'settings',
+        loadChildren: () => 
+          import('../settings/settings.module').then(m => m.SettingsPageModule)
       },
       {
         path: '',
