@@ -6,8 +6,24 @@
 
 <ion-content>
 
-  <!-- Input with clear button when there is a value -->
-  <ion-label position="stacked">First Name <ion-text color="danger">*</ion-text></ion-label>
-  <ion-input clearInput value="clear me"></ion-input>
+  <ion-item>
+    <!-- Input with clear button when there is a value -->
+    <ion-label position="stacked">Title <ion-text color="danger">*</ion-text>
+    </ion-label>
+    <ion-input clearInput value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <!-- Input with clear button when there is a value -->
+    <ion-label position="stacked">Notes <ion-text color="danger">*</ion-text>
+    </ion-label>
+    <ion-input clearInput value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Start Time</ion-label>
+    <ion-datetime display-format="h:mm A" picker-format="h:mm A" value="1990-02-19T07:43Z"></ion-datetime>
+  </ion-item>
+
 
 </ion-content>
